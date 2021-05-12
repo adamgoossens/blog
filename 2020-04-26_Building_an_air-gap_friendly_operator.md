@@ -43,7 +43,7 @@ index 6203332..0738f14 100644
                - modern
                - -v
 -              image: "docker.io/memcached:1.4.36-alpine"
-+              image: "{%raw%}{{ lookup('env', 'RELATED_IMAGE_MEMCACHED') }}{%endraw%}"
++              image: "{% raw %}{{ lookup('env', 'RELATED_IMAGE_MEMCACHED') }}{% endraw %}"
                ports:
                  - containerPort: 11211
 ```
